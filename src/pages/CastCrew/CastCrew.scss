@@ -1,0 +1,56 @@
+.all_cast_crew_section {
+  margin: 5% 0;
+  .movie_content_section {
+    background-color: #423030;
+    h1 {
+      color: #fff;
+      font-weight: 400;
+    }
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #c8cdd0;
+    }
+    a:hover {
+      color: #0dcaf0;
+    }
+  }
+
+  .cast_crew_section {
+    margin-top: 30px;
+    h3 {
+      color: #292f36;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      border-left: 10px solid #e1e6ea;
+      padding: 0 15px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .cast_crew_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .cast_crew_item_content {
+      flex: 1;
+      h4 {
+        margin-top: 0;
+        font-size: 18px;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #888;
+      }
+    }
+  }
+}

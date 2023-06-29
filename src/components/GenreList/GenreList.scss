@@ -1,0 +1,14 @@
+.genre_list_section {
+  margin-top: 20px;
+  text-align: center;
+  .genre_button {
+    border-radius: 50px;
+    margin: 5px;
+  }
+  .genre_button:hover,
+  .genre_button:active,
+  .genre_button:focus,
+  .genre_button:visited {
+    color: #fff;
+  }
+}
