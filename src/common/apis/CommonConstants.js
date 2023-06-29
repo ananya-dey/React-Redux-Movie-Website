@@ -10,7 +10,7 @@ const commonConstants = {
   BG_IMG_780: "https://image.tmdb.org/t/p/w780",
   NOT_FOUND_IMG: "https://www.movienewz.com/img/films/poster-holder.jpg",
   DEFAULT_LANG: "en-US",
-  CURRENT_DATE: moment(new Date()).format("YYYY-MM-DD"),
+  CURRENT_DATE: moment().format("YYYY-MM-DD"),
 };
 
 export default commonConstants;

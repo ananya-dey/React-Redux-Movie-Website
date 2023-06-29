@@ -1,5 +1,5 @@
 {
-  "name": "movie-website",
+  "name": "react-redux-movie-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

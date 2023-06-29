@@ -17,10 +17,13 @@ const Filter = () => {
     if (selectedDayRange.from && selectedDayRange.to) {
       const dateData = {
         page_no: 1,
-        from_date: moment(selectedDayRange.from).format("YYYY-MM-DD"),
-        to_date: moment(selectedDayRange.to).format("YYYY-MM-DD"),
+        from_date: moment(selectedDayRange.from)
+          .subtract(1, "months")
+          .format("YYYY-MM-DD"),
+        to_date: moment(selectedDayRange.to)
+          .subtract(1, "months")
+          .format("YYYY-MM-DD"),
       };
-    
       dispatch(fetchAllMovies(dateData));
     }
   }, [dispatch, selectedDayRange.from, selectedDayRange.to]);
@@ -30,7 +33,6 @@ const Filter = () => {
         value={selectedDayRange}
         onChange={setSelectedDayRange}
         inputPlaceholder="Select a day range"
-        calendarClassName="responsive-calendar"
         shouldHighlightWeekends
       />
     </div>
